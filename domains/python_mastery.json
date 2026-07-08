@@ -1,0 +1,79 @@
+{
+  "domain": "Python Mastery",
+  "nodes": [
+    {
+      "id": "GIL",
+      "type": "Concept",
+      "description": "Global Interpreter Lock, a mutex that protects access to Python objects.",
+      "efficiency_traits": "Thread safety vs CPU-bound parallelism limitation",
+      "prerequisites": [],
+      "cross_links": []
+    },
+    {
+      "id": "Decorators",
+      "type": "Concept",
+      "description": "Functions that modify the behavior of other functions or classes.",
+      "efficiency_traits": "High code reuse",
+      "prerequisites": [],
+      "cross_links": []
+    },
+    {
+      "id": "Generators",
+      "type": "Concept",
+      "description": "Functions that return an iterator yielding one item at a time.",
+      "efficiency_traits": "O(1) Memory complexity for large datasets",
+      "prerequisites": [],
+      "cross_links": []
+    },
+    {
+      "id": "Context_Managers",
+      "type": "Concept",
+      "description": "Object designed to be used in a with-statement to ensure resources are cleaned up.",
+      "efficiency_traits": "Safe resource allocation",
+      "prerequisites": [],
+      "cross_links": []
+    },
+    {
+      "id": "Asyncio",
+      "type": "Concept",
+      "description": "Library to write concurrent code using the async/await syntax.",
+      "efficiency_traits": "High IO-bound throughput",
+      "prerequisites": ["Generators", "GIL"],
+      "cross_links": [
+        {"target_domain": "database_mastery.json", "target_node": "Connection_Pooling"}
+      ]
+    },
+    {
+      "id": "Memory_Management",
+      "type": "Concept",
+      "description": "Reference counting and garbage collection in Python.",
+      "efficiency_traits": "Automatic but unpredictable pauses",
+      "prerequisites": ["GIL"],
+      "cross_links": []
+    },
+    {
+      "id": "MVC",
+      "type": "Pattern",
+      "description": "Model-View-Controller architecture.",
+      "efficiency_traits": "Separation of concerns",
+      "prerequisites": [],
+      "cross_links": []
+    },
+    {
+      "id": "REST_API",
+      "type": "Pattern",
+      "description": "Representational State Transfer application interfaces (FastAPI/Flask).",
+      "efficiency_traits": "Stateless horizontal scaling",
+      "prerequisites": ["MVC"],
+      "cross_links": []
+    },
+    {
+      "id": "Data_Processing_Pipelines",
+      "type": "Pattern",
+      "description": "Chained processing steps for data transformation.",
+      "efficiency_traits": "Optimized batch processing",
+      "prerequisites": ["Generators"],
+      "cross_links": []
+    }
+  ]
+}

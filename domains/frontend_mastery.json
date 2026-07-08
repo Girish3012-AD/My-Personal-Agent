@@ -1,0 +1,56 @@
+{
+  "domain": "Frontend Mastery",
+  "nodes": [
+    {
+      "id": "Virtual_DOM",
+      "type": "Concept",
+      "description": "In-memory representation of real DOM elements.",
+      "prerequisites": [],
+      "cross_links": []
+    },
+    {
+      "id": "Component_Lifecycle",
+      "type": "Concept",
+      "description": "Sequence of events in the life of a React component.",
+      "prerequisites": ["Virtual_DOM"],
+      "cross_links": []
+    },
+    {
+      "id": "State_Management",
+      "type": "Concept",
+      "description": "Techniques for managing state across components.",
+      "prerequisites": ["Component_Lifecycle"],
+      "cross_links": [
+        {"target_domain": "system_design_mastery.json", "target_node": "Event_Driven_Architecture"}
+      ]
+    },
+    {
+      "id": "Server_Side_Rendering",
+      "type": "Concept",
+      "description": "Rendering web pages on the server instead of the browser.",
+      "prerequisites": [],
+      "cross_links": []
+    },
+    {
+      "id": "Custom_Hooks",
+      "type": "Pattern",
+      "description": "Reusable functions containing stateful logic.",
+      "prerequisites": ["Component_Lifecycle"],
+      "cross_links": []
+    },
+    {
+      "id": "Higher_Order_Components",
+      "type": "Pattern",
+      "description": "A function that takes a component and returns a new component.",
+      "prerequisites": ["Component_Lifecycle"],
+      "cross_links": []
+    },
+    {
+      "id": "Hydration",
+      "type": "Pattern",
+      "description": "Attaching event listeners to server-rendered HTML.",
+      "prerequisites": ["Server_Side_Rendering", "Virtual_DOM"],
+      "cross_links": []
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "ai-os",
+  "version": "1.0.0",
+  "description": "Artificial Intelligence Operating System Core and LearnOS Bootstrap",
+  "type": "module",
+  "main": "kernel/index.js",
+  "scripts": {
+    "test": "node check_imports.js"
+  },
+  "dependencies": {
+    "ws": "^8.21.0"
+  }
+}

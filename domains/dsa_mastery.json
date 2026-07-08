@@ -1,0 +1,20 @@
+{
+  "domain": "DSA Mastery",
+  "nodes": [
+    {
+      "id": "Graphs",
+      "type": "Concept",
+      "description": "Non-linear data structure consisting of nodes and edges.",
+      "cross_links": [
+        {"target_domain": "system_design_mastery.json", "target_node": "Network_Topology"}
+      ]
+    },
+    {
+      "id": "Sliding Window",
+      "type": "Pattern",
+      "description": "Technique for finding subarrays or sublists.",
+      "prerequisites": ["Arrays", "Two Pointers"],
+      "cross_links": []
+    }
+  ]
+}

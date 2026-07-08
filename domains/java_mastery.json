@@ -1,0 +1,79 @@
+{
+  "domain": "Java Mastery",
+  "nodes": [
+    {
+      "id": "JVM_Architecture",
+      "type": "Concept",
+      "description": "Understanding ClassLoaders, Memory Areas, and the Execution Engine.",
+      "complexity": "High",
+      "prerequisites": [],
+      "cross_links": []
+    },
+    {
+      "id": "Garbage_Collection",
+      "type": "Concept",
+      "description": "Mechanisms for automatic memory management.",
+      "complexity": "High",
+      "prerequisites": ["JVM_Architecture"],
+      "cross_links": []
+    },
+    {
+      "id": "Concurrency_Multithreading",
+      "type": "Concept",
+      "description": "Execution of complex processes in parallel.",
+      "complexity": "Very High",
+      "prerequisites": ["JVM_Architecture"],
+      "cross_links": [
+        {"target_domain": "system_design_mastery.json", "target_node": "Event_Driven_Architecture"}
+      ]
+    },
+    {
+      "id": "Collections_Framework",
+      "type": "Concept",
+      "description": "Data structures and algorithms available natively in Java.",
+      "complexity": "Medium",
+      "prerequisites": [],
+      "cross_links": []
+    },
+    {
+      "id": "Streams_API",
+      "type": "Concept",
+      "description": "Functional-style operations on streams of elements.",
+      "complexity": "Medium",
+      "prerequisites": ["Collections_Framework"],
+      "cross_links": []
+    },
+    {
+      "id": "Singleton",
+      "type": "Pattern",
+      "description": "Ensures a class has only one instance and provides a global point of access.",
+      "complexity": "Low",
+      "prerequisites": [],
+      "cross_links": []
+    },
+    {
+      "id": "Factory",
+      "type": "Pattern",
+      "description": "Creates objects without specifying the exact class to create.",
+      "complexity": "Medium",
+      "prerequisites": [],
+      "cross_links": []
+    },
+    {
+      "id": "ThreadPool_Executor",
+      "type": "Pattern",
+      "description": "Thread pool management for scalable concurrent task execution.",
+      "complexity": "High",
+      "prerequisites": ["Concurrency_Multithreading"],
+      "cross_links": []
+    },
+    {
+      "id": "CompletableFuture",
+      "type": "Pattern",
+      "description": "Asynchronous programming models in Java.",
+      "complexity": "High",
+      "prerequisites": ["Concurrency_Multithreading", "ThreadPool_Executor"],
+      "cross_links": []
+    }
+  ]
+}

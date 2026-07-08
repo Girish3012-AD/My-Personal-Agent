@@ -1,0 +1,49 @@
+{
+  "domain": "Startup Playbook",
+  "nodes": [
+    {
+      "id": "Lean_Canvas",
+      "type": "Pattern",
+      "description": "1-page business plan template that helps you deconstruct your idea into its key assumptions.",
+      "prerequisites": [],
+      "cross_links": []
+    },
+    {
+      "id": "Market_Validation",
+      "type": "Concept",
+      "description": "Determining if there's a need for your product in your target market.",
+      "prerequisites": ["Lean_Canvas"],
+      "cross_links": []
+    },
+    {
+      "id": "MVP_Prioritization",
+      "type": "Pattern",
+      "description": "Focusing strictly on core features to test assumptions quickly.",
+      "prerequisites": ["Market_Validation"],
+      "cross_links": [
+        {"target_domain": "engines", "target_node": "ENG-ENG-01"}
+      ]
+    },
+    {
+      "id": "Founder_Equity",
+      "type": "Concept",
+      "description": "Vesting schedules and capitalization table management.",
+      "prerequisites": [],
+      "cross_links": []
+    },
+    {
+      "id": "Growth_Hacking",
+      "type": "Concept",
+      "description": "Rapid experimentation across marketing channels to identify efficient growth.",
+      "prerequisites": ["MVP_Prioritization"],
+      "cross_links": []
+    },
+    {
+      "id": "Funding_Stages",
+      "type": "Concept",
+      "description": "Bootstrapping, Pre-Seed, Seed, Series A, B, C+.",
+      "prerequisites": ["Market_Validation"],
+      "cross_links": []
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "domain": "Soft Skills Mastery",
+  "nodes": [
+    {
+      "id": "Technical_Communication",
+      "type": "Concept",
+      "description": "Explaining complex technical concepts to non-technical stakeholders.",
+      "prerequisites": [],
+      "cross_links": [
+        {"target_domain": "engines", "target_node": "LRN-ENG-02"}
+      ]
+    },
+    {
+      "id": "Conflict_Resolution",
+      "type": "Concept",
+      "description": "Navigating disagreements professionally to achieve team alignment.",
+      "prerequisites": [],
+      "cross_links": []
+    },
+    {
+      "id": "Leadership_Principles",
+      "type": "Concept",
+      "description": "Ownership, bias for action, and delivering results.",
+      "prerequisites": [],
+      "cross_links": []
+    },
+    {
+      "id": "Presentation_Strategy",
+      "type": "Pattern",
+      "description": "Structuring narratives and visual aids for maximum impact.",
+      "prerequisites": ["Technical_Communication"],
+      "cross_links": []
+    }
+  ]
+}

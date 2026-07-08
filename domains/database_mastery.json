@@ -1,0 +1,70 @@
+{
+  "domain": "Database Mastery",
+  "nodes": [
+    {
+      "id": "ACID_Properties",
+      "type": "Concept",
+      "description": "Atomicity, Consistency, Isolation, Durability.",
+      "prerequisites": [],
+      "cross_links": []
+    },
+    {
+      "id": "Transaction_Isolation_Levels",
+      "type": "Concept",
+      "description": "Read Uncommitted, Read Committed, Repeatable Read, Serializable.",
+      "prerequisites": ["ACID_Properties"],
+      "cross_links": []
+    },
+    {
+      "id": "Indexing_Strategies",
+      "type": "Concept",
+      "description": "Techniques for optimizing database lookups.",
+      "prerequisites": [],
+      "cross_links": []
+    },
+    {
+      "id": "B-Trees",
+      "type": "Concept",
+      "description": "Self-balancing tree data structure that maintains sorted data.",
+      "prerequisites": ["Indexing_Strategies"],
+      "cross_links": []
+    },
+    {
+      "id": "Write-Ahead_Logging",
+      "type": "Concept",
+      "description": "Family of techniques for providing atomicity and durability.",
+      "prerequisites": ["ACID_Properties"],
+      "cross_links": []
+    },
+    {
+      "id": "Normalization",
+      "type": "Pattern",
+      "description": "Structuring a database to reduce data redundancy and improve data integrity.",
+      "prerequisites": [],
+      "cross_links": []
+    },
+    {
+      "id": "Denormalization",
+      "type": "Pattern",
+      "description": "Adding redundant data to optimize read performance.",
+      "prerequisites": ["Normalization"],
+      "cross_links": []
+    },
+    {
+      "id": "Query_Optimization",
+      "type": "Pattern",
+      "description": "Techniques to improve the execution time of database queries.",
+      "prerequisites": ["Indexing_Strategies"],
+      "cross_links": []
+    },
+    {
+      "id": "Connection_Pooling",
+      "type": "Pattern",
+      "description": "Cache of database connections maintained so that connections can be reused.",
+      "prerequisites": [],
+      "cross_links": [
+        {"target_domain": "system_design_mastery.json", "target_node": "Database_Sharding"}
+      ]
+    }
+  ]
+}

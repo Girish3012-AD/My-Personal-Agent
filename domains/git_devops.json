@@ -1,0 +1,17 @@
+{
+  "domain": "Git & DevOps",
+  "nodes": [
+    {
+      "concept": "Version Control",
+      "description": "System that records changes to a file or set of files over time."
+    },
+    {
+      "concept": "CI/CD",
+      "description": "Continuous Integration and Continuous Deployment pipelines."
+    },
+    {
+      "concept": "Docker",
+      "description": "Platform for developing, shipping, and running applications in containers."
+    }
+  ]
+}

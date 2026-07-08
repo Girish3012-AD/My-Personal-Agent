@@ -1,0 +1,93 @@
+{
+  "domain": "System Design Mastery",
+  "nodes": [
+    {
+      "id": "CAP_Theorem",
+      "type": "Concept",
+      "description": "Consistency, Availability, and Partition tolerance trade-offs.",
+      "scalability_metrics": "Theoretical Foundation",
+      "trade_offs": "Sacrifice Consistency for Availability during partitions.",
+      "cross_links": []
+    },
+    {
+      "id": "Load_Balancing",
+      "type": "Concept",
+      "description": "Distributing traffic across multiple servers.",
+      "scalability_metrics": "Horizontal Scaling up to 10M+ RPM",
+      "trade_offs": "Increased latency for routing vs reliability.",
+      "cross_links": []
+    },
+    {
+      "id": "Database_Sharding",
+      "type": "Concept",
+      "description": "Partitioning data across multiple machines.",
+      "scalability_metrics": "Unlimited data storage scaling",
+      "trade_offs": "Complex cross-shard joins and transaction management.",
+      "cross_links": []
+    },
+    {
+      "id": "Microservices",
+      "type": "Concept",
+      "description": "Structuring applications as a collection of loosely coupled services.",
+      "scalability_metrics": "Independent scaling of domains",
+      "trade_offs": "Operational complexity and network latency.",
+      "cross_links": []
+    },
+    {
+      "id": "Event_Driven_Architecture",
+      "type": "Concept",
+      "description": "Promotes production, detection, consumption of, and reaction to events.",
+      "scalability_metrics": "Highly scalable async processing",
+      "trade_offs": "Eventual consistency and debugging complexity.",
+      "cross_links": []
+    },
+    {
+      "id": "Caching_Strategies",
+      "type": "Concept",
+      "description": "Write-through, write-around, and write-back caches.",
+      "scalability_metrics": "Reduces DB load by up to 90%",
+      "trade_offs": "Cache invalidation and stale data.",
+      "cross_links": []
+    },
+    {
+      "id": "API_Gateway",
+      "type": "Pattern",
+      "description": "Single entry point for all clients.",
+      "scalability_metrics": "Handles thousands of concurrent requests",
+      "trade_offs": "Single point of failure without redundancy.",
+      "cross_links": []
+    },
+    {
+      "id": "Circuit_Breaker",
+      "type": "Pattern",
+      "description": "Prevents catastrophic cascading failures across microservices.",
+      "scalability_metrics": "Improves system resilience under high load",
+      "trade_offs": "Requires tuning timeout thresholds.",
+      "cross_links": []
+    },
+    {
+      "id": "Saga_Pattern",
+      "type": "Pattern",
+      "description": "Managing distributed transactions.",
+      "scalability_metrics": "Scalable long-running transactions",
+      "trade_offs": "Complex compensating transaction logic.",
+      "cross_links": []
+    },
+    {
+      "id": "Rate_Limiting",
+      "type": "Pattern",
+      "description": "Controlling the rate of traffic sent or received on a network.",
+      "scalability_metrics": "Protects services from DDoS and abuse",
+      "trade_offs": "May reject valid requests during traffic spikes.",
+      "cross_links": []
+    },
+    {
+      "id": "Network_Topology",
+      "type": "Concept",
+      "description": "The arrangement of the elements of a communication network.",
+      "scalability_metrics": "Varies by topology model",
+      "trade_offs": "Latency vs Fault Tolerance.",
+      "cross_links": []
+    }
+  ]
+}

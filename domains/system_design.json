@@ -1,0 +1,21 @@
+{
+  "domain": "System Design",
+  "nodes": [
+    {
+      "concept": "Microservices",
+      "description": "Architectural style that structures an application as a collection of loosely coupled services."
+    },
+    {
+      "concept": "Load Balancing",
+      "description": "Distributes network or application traffic across a number of servers."
+    },
+    {
+      "concept": "Caching",
+      "description": "Storing data in a temporary storage area to improve performance."
+    },
+    {
+      "concept": "Database Sharding",
+      "description": "A type of database partitioning that separates very large databases into smaller, faster, more easily managed parts."
+    }
+  ]
+}

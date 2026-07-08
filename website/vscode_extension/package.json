@@ -1,0 +1,51 @@
+{
+  "name": "aios-extension",
+  "displayName": "AI-OS Extension",
+  "version": "1.0.0",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "activationEvents": [
+    "onCommand:AIOS.AnalyzeCode",
+    "onCommand:AIOS.ResearchPaper",
+    "onCommand:AIOS.MasterConcept",
+    "onView:aios-sidebar"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      { "command": "AIOS.AnalyzeCode", "title": "AIOS: Analyze Code" },
+      { "command": "AIOS.ResearchPaper", "title": "AIOS: Research Paper" },
+      { "command": "AIOS.MasterConcept", "title": "AIOS: Master Concept" }
+    ],
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "aios-explorer",
+          "title": "AI-OS",
+          "icon": "media/icon.svg"
+        }
+      ]
+    },
+    "views": {
+      "aios-explorer": [
+        {
+          "type": "webview",
+          "id": "aios-sidebar",
+          "name": "AI-OS Dashboard"
+        }
+      ]
+    }
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.18.0",
+    "@types/vscode": "^1.80.0",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "typescript": "^5.0.0"
+  }
+}

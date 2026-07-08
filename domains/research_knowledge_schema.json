@@ -1,0 +1,16 @@
+{
+  "entity_types": {
+    "AcademicPaper": {
+      "fields": ["doi", "title", "authors", "publication_date", "abstract", "key_findings", "methodology_class"],
+      "relationships": ["cites", "cited_by", "implements_concept"]
+    },
+    "TechnicalBenchmark": {
+      "fields": ["benchmark_name", "model_version", "score", "metric_unit", "dataset_name", "date_run"],
+      "relationships": ["evaluates_model", "uses_dataset"]
+    },
+    "ConceptMapping": {
+      "fields": ["source_concept", "mapped_concept", "confidence_score", "reasoning_context"],
+      "description": "Links research findings to established Knowledge Service concepts."
+    }
+  }
+}

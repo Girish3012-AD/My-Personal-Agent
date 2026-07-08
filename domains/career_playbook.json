@@ -1,0 +1,42 @@
+{
+  "domain": "Career Playbook",
+  "nodes": [
+    {
+      "id": "Resume_Optimization",
+      "type": "Concept",
+      "description": "Techniques for aligning keywords and tech stacks with ATS filters.",
+      "prerequisites": [],
+      "cross_links": [
+        {"target_domain": "engines", "target_node": "ENG-ENG-02"}
+      ]
+    },
+    {
+      "id": "Interview_STAR_Method",
+      "type": "Pattern",
+      "description": "Situation, Task, Action, Result framework for behavioral interviews.",
+      "prerequisites": [],
+      "cross_links": []
+    },
+    {
+      "id": "Salary_Negotiation",
+      "type": "Concept",
+      "description": "Strategies for maximizing total compensation packages.",
+      "prerequisites": [],
+      "cross_links": []
+    },
+    {
+      "id": "Portfolio_Strategy",
+      "type": "Concept",
+      "description": "Curating high-impact projects that demonstrate end-to-end engineering skills.",
+      "prerequisites": ["Resume_Optimization"],
+      "cross_links": []
+    },
+    {
+      "id": "Internship_Placement_Path",
+      "type": "Pattern",
+      "description": "Structured roadmap for securing early-career tech roles.",
+      "prerequisites": ["Interview_STAR_Method", "Portfolio_Strategy"],
+      "cross_links": []
+    }
+  ]
+}
