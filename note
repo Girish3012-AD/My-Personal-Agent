@@ -1,0 +1,92 @@
+What I Built: Agentic Scaffolding Engine
+
+I created a custom, reusable CLI command named `create-ai-agent` on my local machine. It instantly bootstraps an isolated AI Engineering environment equipped with a headless browser and Model Context Protocol (MCP) servers.
+
+How to trigger a new environment:
+
+```
+
+# Open any terminal and type:
+
+create-ai-agent [project-name]
+
+# To start the agent in that new folder:
+
+cd [project-name]
+
+./start.sh
+
+```
+
+Architecture Generated:
+
+1. `orchestrator.py`: The AI Brain (Antigravity engine).
+
+2. `mcp_server.py`: The Robotic Hands (Playwright Browser Controller).
+
+3. `start.sh`: The single power switch to boot the system.
+
+When to Use This:
+
+• Yes: Building an autonomous assistant (AEOS), scraping complex dynamic websites, or needing an AI to interact with software using MCP.
+
+
+
+• No: Static calculations, building predictable ledgers, or if stable REST APIs already exist.
+
+
+
+What We Built: AI Engineering Operating System (AEOS)
+
+Here is a simple, step-by-step explanation of our AI assistant platform:
+
+1. The "Brain" (The Core System) We created an "AI Engineering Operating System." Instead of just a chatbot, this system is designed to actually do tasks on your computer.
+
+2. Understanding and Planning (Sensory & Intelligence) The AI takes a simple request in plain English, thinks about it, and breaks it down into a structured, step-by-step to-do list.
+
+3. Memory We set up two types of memory so it learns over time:
+
+• Short-term memory: To keep track of current tasks.
+
+• Long-term memory: To remember past interactions, rules, and experiences.
+
+4. "Hands" to Use the Computer (Execution Layer) The AI can take actions on its own: open files, run commands, and open a web browser to navigate, click, and type—just like a human.
+
+5. A Safety Net (Governance Layer) We built a "Human-in-the-Loop" safety system. If the AI is about to do something risky, it pauses and asks for permission. It will not proceed until you manually click "Approve."
+
+6. Web Automation Testing We ran live tests proving the system works. The AI successfully navigated to Google Colab to create a project, and demonstrated opening a local coding environment to type and run code autonomously.
+
+Summary: We built a smart, autonomous AI assistant that can browse the web and control a computer safely, always asking for your permission before doing anything critical.
+
+
+
+aicarrierplatform
+What This Project Does (in Plain English)
+Imagine you are looking for your next career move. This project builds a Smart Career Intelligence Hub—a secure personal career advisor powered by Artificial Intelligence (AI).
+Here is what it does for you:
+Creates Your Secure Profile: It securely stores your work history, what you achieved, and the skills you have. It has a locked door—only you can register, log in, and view or edit your own details.
+AI Verification of Your Skills: Instead of just letting you list skills without proof, the system acts like a verification checker. It reviews your work achievements and uses AI (powered by Google Gemini) to confirm if the work you did actually proves you have that skill.
+Benchmarks You Against a Job (Gap Analysis): If you find a job you want to apply for, you paste the job description into the system. The AI compares your verified profile against it and gives you a Match Score (e.g., 70% Match), lists which skills you are missing, and suggests recommendations.
+Customized Career Coach: Once it knows your skill gaps, the AI acts as a career coach. It builds a friendly step-by-step learning path showing you what to learn, where to look for tutorials, and how long it should take to close the gap and get ready for the job.
+
+
+A Look at One of the Files: business-rules.md
+This file is the "Rulebook" for the platform. It sets the foundational business guidelines in plain language that the system must follow.
+Here are the rules defined inside it:
+markdown
+# Business Rules
+1. **Skill Verification:** A skill is only "Validated" if ai_validated_confidence >= 0.7.
+2. **Temporal Integrity:** No end_date before start_date in Experience.
+3. **Immutability:** Identity updates create new snapshots.
+4. **Evidence Linkage:** Skills must have a foreign key to a project/experience.
+What these rules mean in practice:
+Rule 1: When the AI evaluates your achievements, it scores its confidence from 0.0 (no confidence) to 1.0 (certainty). A skill is only marked as green/validated if the score is at least 0.7.
+Rule 2: You cannot accidentally enter that you finished a job before you started it.
+Rule 3: Every time you update your profile, the system logs it as a new snapshot with the current time.
+Rule 4: You can't just claim a skill out of thin air; it must be linked directly to a job experience or project you entered.
+
+
+
+
+
+Recovery (If the command stops working): The script lives at `~/.local/bin/create-ai-agent` (with a `.cmd` wrapper on Windows). If it fails, check that `C:\Users\Lenovo\.local\bin` is still in the Windows User PATH environment variable.
